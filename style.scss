@@ -1,0 +1,146 @@
+:root {
+    --primary-color-black: #000000;
+    --primary-color-white: #ffffff;
+    --secondary-color-white: #dfdddd;
+    --primary-color-red: #ff0000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Droid Sans", sans-serif;
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    30% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0px);
+    }
+
+    30% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes color {
+    from {
+        color: var(--primary-color-white);
+    }
+
+    to {
+        color: var(--primary-color-red);
+    }
+}
+
+body {
+    background-color: var(--primary-color-black);
+    color: var(--primary-color-white);
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+
+        .loading {
+            font-size: 1.5rem;
+            margin: 3.75rem auto;
+            perspective: 5.625rem;
+
+            div {
+                display: inline-block;
+                animation-name: flip;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                transform-origin: 50% 50% 8px;
+                transform-style: preserve-3d;
+            }
+
+            .l1 {
+                animation-delay: 0.1s;
+            }
+
+            .l2 {
+                animation-delay: 0.2s;
+            }
+
+            .l3 {
+                animation-delay: 0.3s;
+            }
+
+            .l4 {
+                animation-delay: 0.4s;
+            }
+
+            .l5 {
+                animation-delay: 0.5s;
+            }
+
+            .l6 {
+                animation-delay: 0.6s;
+            }
+
+            .l7 {
+                animation-delay: 0.7s;
+            }
+
+            .l8 {
+                animation-delay: 0.8s;
+            }
+
+            .l9 {
+                animation-delay: 0.9s;
+            }
+
+            .l10 {
+                animation-delay: 1s;
+            }
+        }
+        
+        button {
+            display: inline-block;
+            margin: 1.313rem auto;
+            padding: 0.625rem 0.938rem;
+            cursor: pointer;
+            box-shadow: 5px 5px 5px var(--primary-color-red);
+        }
+
+        button:hover {
+            background-color: var(--secondary-color-white);
+            box-shadow:0 0 10px var(--primary-color-red);
+        }
+    }
+}
