@@ -20,6 +20,8 @@ A organização dos arquivos está bem definida para facilitar o entendimento e 
 ├── style.css           # Estilos gerados pelo Sass
 ├── style.css.map       # Mapa de origem para depuração do CSS
 ├── style.scss          # Arquivo Sass para estilos modulares
+├── assets/             # Recursos do projeto
+    └── Loading-Text-Animamations.gif # Screenshot da aplicação
 ```
 
 ---
@@ -137,14 +139,11 @@ $(".jump").click(() => {
 
 ---
 
-## 📸 Screenshots
+## 🎥 Demonstrações
 
-Adicione capturas de tela dos seguintes momentos:
-1. Layout inicial com o texto animado.
-2. Exemplo do efeito `Flip`.
-3. Exemplo do efeito `Jump`.
-4. Exemplo do efeito `Rotate`.
-5. Exemplo do efeito `Color`.
+<div>
+    <img src="./assets/Loading-Text-Animamations.gif"/>
+</div>
 
 ---
 
